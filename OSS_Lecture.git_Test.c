@@ -67,3 +67,5 @@ void withdraw(account *tmp)
 	printf("출금이 완료되었습니다.\n");
 
 }
+
+//이상
