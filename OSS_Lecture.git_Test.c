@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 struct account
 {
 	int id;
@@ -18,10 +21,12 @@ void depositMoney(account *tmp)
 	scanf("%d", &money);
 	fflush(stdin);
 
-	for (;;) {
+	for (;;)
+	{
 		printf("입력한 계좌번호와 금액이 각각 %d, %d가 맞습니까?(Y/N)\n", id, money);
 		scanf("%c", &q);
-		if (q == 'y') {
+		if (q == 'y')
+		{
 			for (int i = 0; i<100; i++)
 			{
 				if (id == tmp[i].id)
@@ -50,10 +55,12 @@ void withdraw(account *tmp)
 	scanf("%d", &money);
 	fflush(stdin);
 
-	for (;;) {
+	for (;;)
+	{
 		printf("입력한 계좌번호와 금액이 각각 %d, %d가 맞습니까?(Y/N)\n", id, money);
 		scanf("%c", &q);
-		if (q == 'y') {
+		if (q == 'y')
+		{
 			for (int i = 0; i<100; i++)
 			{
 				if (id == tmp[i].id)
@@ -67,5 +74,3 @@ void withdraw(account *tmp)
 	printf("출금이 완료되었습니다.\n");
 
 }
-
-//이상
